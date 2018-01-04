@@ -10,14 +10,14 @@ const mainGuy = {
 //This guy doesn't call a function
 const nofunc = (done) => {
   let result;
-  result = get(mainGuy, 'a', '');
+  result = (mainGuy && mainGuy.a) || '';
   done();
 }
 
 //This guy calls a function
 const func = (done) => {
   let result;
-  result = (mainGuy && mainGuy.a) || '';
+  result = get(mainGuy, 'a', '');
   done();
 }
 
