@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "deep-freeze": "0.0.1",
+    "lodash": "^4.17.11",
+    "lodash.get": "^4.4.2",
     "timeit": "^0.1.1"
   }
 }
